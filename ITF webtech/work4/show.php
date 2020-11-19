@@ -21,8 +21,9 @@
     <thead>
       <tr>
         <th width="100"> <div align="center">Name</div></th>
-        <th width="350"> <div>Comment</div></th>
-        <th width="150"> <div>Action</div></th>
+        <th width="300"> <div>Comment</div></th>
+        <th width="100"> <div>Link</div></th>
+        <th width="100"> <div align="center">Action</div></th>
       </tr>
     </thead>
     <?php
@@ -33,7 +34,8 @@
       <tr class="table-primary">
         <td><?php echo $Result['Name'];?></div></td>
         <td><?php echo $Result['Comment'];?></td>
-        <td><?php echo $Result['Link'];?><div style="text-align: center"><a href="update.php" class="btn btn-primary">Add</a></div></td>
+        <td><?php echo $Result['Link'];?>
+        <div style="text-align: center"><a href="update.php" class="btn btn-primary">Edit</a></div></td>
       </tr>
     </tbody>
     <?php
