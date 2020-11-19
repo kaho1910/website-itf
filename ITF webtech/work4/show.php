@@ -21,15 +21,37 @@
     .button1 {background-color: #4CAF50;} /* Green */
   </style>
 </head>
-  <body>
+<body>
+  <?php
+  $conn = mysqli_init();
+  mysqli_real_connect($conn, 'itfwebtechsql.mysql.database.azure.com', 'kaho1910@itfwebtechsql', 'Tawan1910', 'work', 3306);
+  if (mysqli_connect_errno($conn))
+  {
+      die('Failed to connect to MySQL: '.mysqli_connect_error());
+  }
+  $res = mysqli_query($conn, 'SELECT * FROM guestbook');
+  ?>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th><div>Name</div></th>
+        <th><div>Comment </div></th>
+        <th><div>Link </div></th>
+      </tr>
+    </thead>
     <?php
-    $conn = mysqli_init();
-    mysqli_real_connect($conn, 'itfwebtechsql.mysql.database.azure.com', 'kaho1910@itfwebtechsql', 'Tawan1910', 'work', 3306);
-    if (mysqli_connect_errno($conn))
+    while($Result = mysqli_fetch_array($res))
     {
-        die('Failed to connect to MySQL: '.mysqli_connect_error());
+    ?>
+    <tbody>
+      <tr class="table-primary">
+        <td><?php echo $Result['Name'];?></div></td>
+        <td><?php echo $Result['Comment'];?></td>
+        <td><?php echo $Result['Link'];?></td>
+      </tr>
+    </tbody>
+    <?php
     }
-    $res = mysqli_query($conn, 'SELECT * FROM guestbook');
     ?>
     <table class="table table-striped">
       <thead>
