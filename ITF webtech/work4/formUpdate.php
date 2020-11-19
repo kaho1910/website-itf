@@ -29,8 +29,8 @@
     {
         die('Failed to connect to MySQL: '.mysqli_connect_error());
     }
-    $id = $_GET['ID'];
-    echo "ID".$id ;
+    $id = $_GET['id'];
+    echo "id".$id ;
     $name = $_REQUEST['name'];
     $comment = $_REQUEST['comment'];
     $link = $_REQUEST['link'];
