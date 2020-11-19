@@ -6,6 +6,20 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    .button {
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+    .button1 {background-color: #4CAF50;} /* Green */
+  </style>
 </head>
   <body>
     <?php
@@ -43,6 +57,6 @@
   <?php
   mysqli_close($conn);
   ?>
-  <a href="form.html" class="btn-primary" style="background-color: transparent; color:black">name01</a>
+  <a href="form.html" class="button button1" style="background-color: transparent; color:black">Add</a>
   </body>
 </html>
