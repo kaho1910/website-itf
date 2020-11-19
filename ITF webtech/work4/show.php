@@ -57,7 +57,6 @@
   <?php
   mysqli_close($conn);
   ?>
-  <a href="form.html" class="btn btn-primary">href Add</a>
-  <button href="/form.html" class="button button1">Add</button>
+  <a align="center" href="form.html" class="btn btn-primary">href Add</a>
   </body>
 </html>
