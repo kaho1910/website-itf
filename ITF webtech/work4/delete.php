@@ -12,13 +12,13 @@ $id = $_GET['id'];
 
 
 $sql = "DELETE FROM guestbook WHERE id = $id";
-
+$link_address = "show.php";
 
 if (mysqli_query($conn, $sql)) {
-    echo '<a href="show.php"></a>';
+    echo "<a href='$link_address'>Link</a>";
   } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
   }
-  
+
 mysqli_close($conn);
 ?>
