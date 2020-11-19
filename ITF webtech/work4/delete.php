@@ -15,7 +15,7 @@ $sql = "DELETE FROM guestbook WHERE id = $id";
 $link_address = "show.php";
 
 if (mysqli_query($conn, $sql)) {
-    echo "<a href='$link_address'>back to Main</a>";
+    echo "<a href='$link_address' class='btn btn-primary'>back to Main</a>";
   } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
   }
