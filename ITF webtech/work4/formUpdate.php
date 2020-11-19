@@ -33,34 +33,11 @@
     $res = mysqli_query($conn, "SELECT * FROM guestbook WHERE id=$id");
   ?>
   <!-- Close container -->
-  <table width="600" class="table table-striped">
-    <thead>
-      <tr>
-        <th width="400"> <div align="center">Name</div></th>
-        <th width="250"> <div>Comment</div></th>
-        <th width="50"> <div>Link</div></th>
-        <th width="100"> <div align="right">Action</div></th>
-      </tr>
-    </thead>
     <?php
     while($Result = mysqli_fetch_array($res))
     {
     ?>
-    <tbody>
-      <tr class="table-primary">
-        <td width="400"><div align="center"><?php echo $Result['Name'];?></div></td>
-        <td width="250"><?php echo $Result['Comment'];?></td>
-        <td width="50"><?php echo $Result['Link'];?></td>
-        <td width="50"><?php echo '<a href="formUpdate.php?id='.$Result['ID'].'" class="btn btn-primary">Edit</a>';?></td>
-        <td width="50"><?php echo '<a href="delete.php?id='.$Result['ID'].'" class="btn btn-primary">Delete</a>';?></td>
-      </tr>
-    </tbody>
-    <?php
-    }
-    ?>
-  </table>
-  <!-- Close container -->
-  <form action="update.php" method="post" id="Comment Form">
+    <form action="update.php" method="post" id="Comment Form">
     <div class="form-group">
       <label for="idName">Name</label><br>
       <input type="text" class="form-control" name="name" id="idName" placeholder="Enter Name" value="<?php echo $res['Name'];?>">
@@ -74,7 +51,11 @@
       <input type="text" class="form-control" name="link" id="idLink" placeholder="Enter Link" value=<?php echo $res['Link'];?>>
     </div>
     <button type="submit" class="button button1">Submit</button>
-  </form>
+    </form>
+    <?php
+    }
+    ?>
+  <!-- Close container -->
   <?php
   mysqli_close($conn);
   ?>
