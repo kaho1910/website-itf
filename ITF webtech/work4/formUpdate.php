@@ -32,27 +32,20 @@
     $id = $_GET['ID'];
     $res = mysqli_query($conn, "SELECT * FROM guestbook WHERE id=$id");
   ?>
-  <?php
-    while($Result = mysqli_fetch_array($res))
-    {
-  ?>
   <form action="update.php" method="post" id="CommentForm">
     <div class="form-group">
       <label for="idName">Name</label><br>
-      <input type="text" class="form-control" name="name" value="<?php echo $Result['name'];?>" id="idName">
+      <input type="text" class="form-control" name="name" value="<?php echo $res['name'];?>" id="idName">
     </div>
     <div class="form-group">
       <label for="idComment">Comment</label><br>
-      <input type="text" class="form-control" name="comment" value="<?php echo $Result['comment'];?>" id="idComment">
+      <input type="text" class="form-control" name="comment" value="<?php echo $res['comment'];?>" id="idComment">
     </div>
     <div class="form-group">
       <label for="link1">Link</label><br>
-      <input type="text" class="form-control" name="link" value="<?php echo $Result['link'];?>" id="idLink">
+      <input type="text" class="form-control" name="link" value="<?php echo $res['link'];?>" id="idLink">
     </div>
     <button type="submit" class="button button1">Submit</button>
   </form>
-  <?php
-    }
-  ?>
 </body>
 </html>
