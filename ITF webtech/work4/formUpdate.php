@@ -30,7 +30,6 @@
         die('Failed to connect to MySQL: '.mysqli_connect_error());
     }
     $id = $_GET['id'];
-    $res = mysqli_query($conn, "SELECT * FROM guestbook WHERE id=$id");
   ?>
   <form action="update.php" method="post" id="UpdateForm">
     <div class="form-group">
