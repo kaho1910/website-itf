@@ -30,9 +30,9 @@
         die('Failed to connect to MySQL: '.mysqli_connect_error());
     }
     $id = $_GET['ID'];
-    $name = $_REQUEST['name'];
-    $comment = $_REQUEST['comment'];
-    $link = $_REQUEST['link'];
+    $name = $_GET['name'];
+    $comment = $_GET['comment'];
+    $link = $_GET['link'];
   ?>
   <form action="update.php" method="post" id="CommentForm">
     <div class="form-group">
