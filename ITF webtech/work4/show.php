@@ -43,5 +43,6 @@
   <?php
   mysqli_close($conn);
   ?>
+  <a href="form.html" class="btn-primary" style="background-color: transparent; color:black">name01</a>
   </body>
 </html>
