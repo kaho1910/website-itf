@@ -16,7 +16,8 @@
     {
         die('Failed to connect to MySQL: '.mysqli_connect_error());
     }
-
+    
+    $res = mysqli_query($conn, "SELECT * FROM guestbook WHERE id = $id");
 
     $name = $_GET['name'];
     $comment = $_GET['comment'];
