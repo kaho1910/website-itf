@@ -18,9 +18,9 @@
     }
 
 
-    $name = $_POST['name'];
-    $comment = $_POST['comment'];
-    $link = $_POST['link'];
+    $name = $_GET['name'];
+    $comment = $_GET['comment'];
+    $link = $_GET['link'];
 
 
     $sql = "UPDATE guestbook SET Name=$name, Comment=$comment, Link=$link WHERE id=$id";
