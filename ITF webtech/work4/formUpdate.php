@@ -34,15 +34,15 @@
   <form action="update.php" method="post" id="UpdateForm">
     <div class="form-group">
       <label for="idName">Name</label><br>
-      <input type="text" class="form-control" name="name" value=<?php echo $res['name'];?> id="idName">
+      <input type="text" class="form-control" name="name" placeholder="Enter Name" id="idName" value=<?php echo $res['name'];?>>
     </div>
     <div class="form-group">
       <label for="idComment">Comment</label><br>
-      <input type="text" class="form-control" name="comment" value="<?php echo $res['comment'];?>" id="idComment">
+      <input type="text" class="form-control" name="comment" placeholder="Enter Comment" id="idComment" value="<?php echo $res['comment'];?>">
     </div>
     <div class="form-group">
       <label for="idLink">Link</label><br>
-      <input type="text" class="form-control" name="link" value=<?php echo $res['link'];?> id="idLink">
+      <input type="text" class="form-control" name="link" placeholder="Enter Link" id="idLink" value="<?php echo $res['link'];?>>
     </div>
     <button type="submit" class="button button1">Submit</button>
   </form>
