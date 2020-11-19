@@ -10,7 +10,7 @@
     .button {
       border: none;
       color: white;
-      padding: 15px 32px;
+      padding: 10px 18px;
       text-align: center;
       text-decoration: none;
       display: inline-block;
@@ -57,6 +57,7 @@
   <?php
   mysqli_close($conn);
   ?>
-  <button align="center" href="/form.html" class="button button1">Add</button>
+  <a href="/form.html" class="btn btn-primary">href Add</a>
+  <button href="/form.html" class="button button1">Add</button>
   </body>
 </html>
