@@ -25,7 +25,7 @@
 
 
   if (mysqli_query($conn, $sql)) {
-      echo "New record deleted successfully<a href='show.php' class='btn btn-primary'>back to Main</a>";
+      echo "New record deleted successfully <br> <a href='show.php' class='btn btn-primary'>back to Main</a>";
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
