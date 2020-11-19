@@ -34,9 +34,9 @@
       <tr class="table-primary">
         <td width="100"><?php echo $Result['Name'];?></div></td>
         <td width="300"><?php echo $Result['Comment'];?></td>
-        <td width="100"><?php echo $Result['Link'];?></td>
-        <td width="25"><div style="text-align: center"><a href="test.php" class="btn btn-primary">Edit</a></div></td>
-        <td width="25"><div style="text-align: center"><a href="test.php" class="btn btn-primary">Delete</a></div></td>
+        <td width="50"><?php echo $Result['Link'];?></td>
+        <td width="75"><div style="text-align: center"><a href="test.php" class="btn btn-primary">Edit</a></div></td>
+        <td width="75"><div style="text-align: center"><a href="test.php" class="btn btn-primary">Delete</a></div></td>
       </tr>
     </tbody>
     <?php
