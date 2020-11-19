@@ -20,8 +20,8 @@
   <table class="table table-striped">
     <thead>
       <tr>
-        <th width="100"> <div align="center">Name</div></th>
-        <th width="300"> <div>Comment</div></th>
+        <th width="200"> <div align="center">Name</div></th>
+        <th width="200"> <div>Comment</div></th>
         <th width="100"> <div>Link</div></th>
         <th width="100"> <div align="center">Action</div></th>
       </tr>
@@ -32,8 +32,8 @@
     ?>
     <tbody>
       <tr class="table-primary">
-        <td width="100"><?php echo $Result['Name'];?></div></td>
-        <td width="300"><?php echo $Result['Comment'];?></td>
+        <td width="200"><?php echo $Result['Name'];?></div></td>
+        <td width="200"><?php echo $Result['Comment'];?></td>
         <td width="50"><?php echo $Result['Link'];?></td>
         <td width="75"><div style="text-align: center"><a href="test.php" class="btn btn-primary">Edit</a></div></td>
         <td width="75"><div style="text-align: center"><a href="test.php" class="btn btn-primary">Delete</a></div></td>
