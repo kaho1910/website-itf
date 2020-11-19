@@ -35,8 +35,8 @@
         <td width="200"><div align="center"><?php echo $Result['Name'];?></div></td>
         <td width="200"><?php echo $Result['Comment'];?></td>
         <td width="50"><?php echo $Result['Link'];?></td>
-        <td width="75"><div style="text-align: center"><a href="test.php" class="btn btn-primary">Edit</a></div></td>
-        <td width="75"><div style="text-align: center"><a href="test.php" class="btn btn-primary">Delete</a></div></td>
+        <td width="75"><div style="text-align: right"><a href="test.php" class="btn btn-primary">Edit</a></div></td>
+        <td width="75"><div style="text-align: left"><a href="test.php" class="btn btn-primary">Delete</a></div></td>
       </tr>
     </tbody>
     <?php
