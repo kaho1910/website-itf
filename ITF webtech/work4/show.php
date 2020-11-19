@@ -15,7 +15,7 @@
   {
       die('Failed to connect to MySQL: '.mysqli_connect_error());
   }
-  $res = mysqli_query($conn, 'SELECT * FROM guestbook');
+  $res = mysqli_query($conn, "SELECT * FROM guestbook");
   ?>
   <table width="600" class="table table-striped">
     <thead>
