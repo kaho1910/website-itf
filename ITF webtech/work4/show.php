@@ -20,7 +20,7 @@
   <table class="table table-striped">
     <thead>
       <tr>
-        <th width="200"> <div align="center">Name</div></th>
+        <th width="400"> <div align="center">Name</div></th>
         <th width="250"> <div>Comment</div></th>
         <th width="50"> <div>Link</div></th>
         <th width="100"> <div align="right">Action</div></th>
@@ -32,7 +32,7 @@
     ?>
     <tbody>
       <tr class="table-primary">
-        <td width="200"><div align="center"><?php echo $Result['Name'];?></div></td>
+        <td width="400"><div align="center"><?php echo $Result['Name'];?></div></td>
         <td width="250"><?php echo $Result['Comment'];?></td>
         <td width="50"><?php echo $Result['Link'];?></td>
         <td width="50"><div style="text-align: center"><a href="test.html" class="btn btn-primary">Edit</a></div></td>
