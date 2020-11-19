@@ -43,6 +43,6 @@
   <?php
   mysqli_close($conn);
   ?>
-  <div style="text-align: center"><a href="test.html" class="btn btn-primary">Add</a></div>
+  <div style="text-align: center"><a href="form.html" class="btn btn-primary">Add</a></div>
   </body>
 </html>
