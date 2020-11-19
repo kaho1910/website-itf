@@ -33,7 +33,7 @@
       <tr class="table-primary">
         <td><?php echo $Result['Name'];?></div></td>
         <td><?php echo $Result['Comment'];?></td>
-        <td><?php echo $Result['Link'];?></td>
+        <td><?php echo $Result['Link'];?><div style="text-align: center"><a href="update.php" class="btn btn-primary">Add</a></div></td>
       </tr>
     </tbody>
     <?php
