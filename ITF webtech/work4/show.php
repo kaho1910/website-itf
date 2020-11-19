@@ -23,7 +23,7 @@
         <th width="200"> <div align="center">Name</div></th>
         <th width="225"> <div>Comment</div></th>
         <th width="25"> <div>Link</div></th>
-        <th width="150"> <div align="center">Action</div></th>
+        <th width="150"> <div align="right">Action</div></th>
       </tr>
     </thead>
     <?php
