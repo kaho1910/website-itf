@@ -1,53 +1,26 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Edit Form</title>
-  </style>
-  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-  <style>
-    .button {
-      border: none;
-      color: white;
-      padding: 10px 18px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin: 4px 2px;
-      cursor: pointer;
-    }
-    .button1 {background-color:green;}
-  </style>
-</head>
-<body>
-  <?php
-  $conn = mysqli_init();
-  mysqli_real_connect($conn, 'itfwebtechsql.mysql.database.azure.com', 'kaho1910@itfwebtechsql', 'Tawan1910', 'work', 3306);
-  if (mysqli_connect_errno($conn))
-  {
-      die('Failed to connect to MySQL: '.mysqli_connect_error());
+<?php
+
+$conn = mysqli_init();
+mysqli_real_connect($conn, 'itfwebtechsql.mysql.database.azure.com', 'kaho1910@itfwebtechsql', 'Tawan1910', 'work', 3306);
+if (mysqli_connect_errno($conn))
+{
+    die('Failed to connect to MySQL: '.mysqli_connect_error());
+}
+
+$id = $_GET['ID'];
+$name = $_POST['name'];
+$comment = $_POST['comment'];
+$link = $_POST['link'];
+
+
+$sql = "UPDATE guestbook SET Name=$name, Comment=$comment, Link=$link WHERE id=$id";
+
+
+if (mysqli_query($conn, $sql)) {
+    echo "New record updated successfully <br> <a href='show.php' class='btn btn-primary'>back to Main</a>";
+  } else {
+    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
   }
-  $id = $_REQUEST['id'];
-  $name = $_REQUEST['name'];
-  $comment = $_REQUEST['comment'];
-  $link = $_REQUEST['link'];
-  ?>
-  <form action="insert.php" method="post" id="CommentForm">
-    <div class="form-group">
-      <label for="idName">Name</label><br>
-      <input type="text" class="form-control" name="name" value="<?php echo $name;?>" id="idName">
-    </div>
-    <div class="form-group">
-      <label for="idComment">Comment</label><br>
-      <input type="text" class="form-control" name="comment" value="<?php echo $comment;?>" id="idComment">
-    </div>
-    <div class="form-group">
-      <label for="link1">Link</label><br>
-      <input type="text" class="form-control" name="link" value="<?php echo $link;?>" id="idLink">
-    </div>
-    <button type="submit" class="button button1">Submit</button>
-  </form>
-</body>
-</html>
+  
+mysqli_close($conn);
+?>
