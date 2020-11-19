@@ -34,9 +34,9 @@
   <table class="table table-striped">
     <thead>
       <tr>
-        <th><div>Name</div></th>
-        <th><div>Comment </div></th>
-        <th><div>Link </div></th>
+        <th width="100"> <div align="center">Name</div></th>
+        <th width="350"> <div align="center">Comment </div></th>
+        <th width="150"> <div align="center">Link </div></th>
       </tr>
     </thead>
     <?php
