@@ -30,12 +30,14 @@
         die('Failed to connect to MySQL: '.mysqli_connect_error());
     }
     $id = $_GET['ID'];
-    echo $id;
     $name = $_GET['name'];
     $comment = $_GET['comment'];
     $link = $_GET['link'];
   ?>
   <form action="update.php" method="post" id="UpdateForm">
+    <?php
+      echo "ID".$id ;
+    ?>
     <div class="form-group">
       <label for="idName">Name</label><br>
       <input type="text" class="form-control" name="name" value="<?php echo $name;?>" id="idName">
