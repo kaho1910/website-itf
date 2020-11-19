@@ -40,15 +40,15 @@
   <form action="update.php" method="post" id="Comment Form">
     <div class="form-group">
       <label for="idName">Name</label><br>
-      <input type="text" class="form-control" name="name" id="idName" placeholder="Enter Name" value=<?php echo $res['Name'];?>>
+      <input type="text" class="form-control" name="name" id="idName" placeholder="Enter Name" value=<?php echo $Result['Name'];?>>
     </div>
     <div class="form-group">
       <label for="idComment">Comment</label><br>
-      <input type="text" class="form-control" name="comment" id="idComment" placeholder="Enter Comment" value=<?php echo $res['Comment'];?>>
+      <input type="text" class="form-control" name="comment" id="idComment" placeholder="Enter Comment" value=<?php echo $Result['Comment'];?>>
     </div>
     <div class="form-group">
       <label for="idLink">Link</label><br>
-      <input type="text" class="form-control" name="link" id="idLink" placeholder="Enter Link" value=<?php echo $res['Link'];?>>
+      <input type="text" class="form-control" name="link" id="idLink" placeholder="Enter Link" value=<?php echo $Result['Link'];?>>
     </div>
     <button type="submit" class="button button1">Submit</button>
   </form>
