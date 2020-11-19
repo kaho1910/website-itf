@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Comment Form</title>
+  <title>Update Form</title>
   </style>
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
@@ -47,7 +47,7 @@
     </div>
     <div class="form-group">
       <label for="link1">Link</label><br>
-      <input type="text" class="form-control" name="link" id="idLink" value="<?php echo $Result['link'];?>" id="link1">
+      <input type="text" class="form-control" name="link" value="<?php echo $Result['link'];?>" id="idLink">
     </div>
     <button type="submit" class="button button1">Submit</button>
   </form>

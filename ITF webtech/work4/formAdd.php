@@ -33,7 +33,7 @@
     </div>
     <div class="form-group">
       <label for="link1">Link</label><br>
-      <input type="text" class="form-control" name="link" id="idLink" placeholder="Enter Link" id="link1">
+      <input type="text" class="form-control" name="link" placeholder="Enter Link" id="idLink" >
     </div>
     <button type="submit" class="button button1">Submit</button>
   </form>
