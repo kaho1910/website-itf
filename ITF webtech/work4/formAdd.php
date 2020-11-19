@@ -29,7 +29,7 @@
     </div>
     <div class="form-group">
       <label for="idComment">Comment</label><br>
-      <input type="text" class="form-control" name="comment" placeholder="Enter Comment" id="idComment" row="3">
+      <input type="text" class="form-control" name="comment" placeholder="Enter Comment" id="idComment">
     </div>
     <div class="form-group">
       <label for="idLink">Link</label><br>
