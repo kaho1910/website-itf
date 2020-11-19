@@ -32,9 +32,6 @@
     $id = $_GET['id'];
   ?>
   <form action="update.php" method="post" id="UpdateForm">
-    <?php
-      $res = mysqli_query($conn, "SELECT * FROM guestbook WHERE id=$id");
-    ?>
     <div class="form-group">
       <label for="idName">Name</label><br>
       <input type="text" class="form-control" name="name" value=<?php echo $res['name'];?> id="idName">
