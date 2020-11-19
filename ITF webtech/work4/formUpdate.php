@@ -35,7 +35,7 @@
     $comment = $_GET['comment'];
     $link = $_GET['link'];
   ?>
-  <form action="update.php" method="post" id="CommentForm">
+  <form action="update.php" method="post" id="UpdateForm">
     <div class="form-group">
       <label for="idName">Name</label><br>
       <input type="text" class="form-control" name="name" value="<?php echo $name;?>" id="idName">
