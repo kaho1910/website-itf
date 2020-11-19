@@ -27,7 +27,7 @@
 
 
     if (mysqli_query($conn, $sql)) {
-        echo "New record updated successfully";
+        echo "New record updated successfully <br> <a href='show.php' class='btn btn-primary'>back to Main</a>";
     } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
