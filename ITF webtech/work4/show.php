@@ -21,8 +21,8 @@
     <thead>
       <tr>
         <th width="200"> <div align="center">Name</div></th>
-        <th width="200"> <div>Comment</div></th>
-        <th width="100"> <div>Link</div></th>
+        <th width="250"> <div>Comment</div></th>
+        <th width="50"> <div>Link</div></th>
         <th width="100"> <div align="center">Action</div></th>
       </tr>
     </thead>
