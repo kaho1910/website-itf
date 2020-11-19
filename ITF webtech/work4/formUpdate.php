@@ -35,7 +35,7 @@
   <form action="update.php" method="post" id="UpdateForm">
     <div class="form-group">
       <label for="idName">Name</label><br>
-      <input type="text" class="form-control" name="name"  id="idName" placeholder="Enter Name" value="<?php echo $res['name'];?>">
+      <input type="text" class="form-control" name="name" id="idName" placeholder="Enter Name" value='<?php echo $res["name"];?>'>
     </div>
     <div class="form-group">
       <label for="idComment">Comment</label><br>
@@ -43,7 +43,7 @@
     </div>
     <div class="form-group">
       <label for="idLink">Link</label><br>
-      <input type="text" class="form-control" name="link"  id="idLink" placeholder="Enter Link" value="<?php echo $res['link'];?>">
+      <input type="text" class="form-control" name="link" id="idLink" placeholder="Enter Link" value="<?php echo $res['link'];?>">
     </div>
     <button type="submit" class="button button1">Submit</button>
   </form>
