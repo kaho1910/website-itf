@@ -35,7 +35,7 @@
   <form action="update.php" method="post" id="Comment Form">
     <div class="form-group">
       <label for="idName">Name</label><br>
-      <input type="text" class="form-control" name="name" id="idName" placeholder="Enter Name" value=<?php echo $res["Name"];?>>
+      <input type="text" class="form-control" name="name" id="idName" placeholder="Enter Name" value="<?php echo $res['Name'];?>">
     </div>
     <div class="form-group">
       <label for="idComment">Comment</label><br>
