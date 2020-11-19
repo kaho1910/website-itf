@@ -51,5 +51,8 @@
     </div>
     <button type="submit" class="button button1">Submit</button>
   </form>
+  <?php
+    }
+  ?>
 </body>
 </html>
