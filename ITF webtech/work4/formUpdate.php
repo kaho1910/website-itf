@@ -38,7 +38,7 @@
     </div>
     <div class="form-group">
       <label for="idComment">Comment</label><br>
-      <input type="text" class="form-control" name="comment" value=<?php echo $res['comment'];?> id="idComment">
+      <input type="text" class="form-control" name="comment" value="<?php echo $res['comment'];?>" id="idComment">
     </div>
     <div class="form-group">
       <label for="idLink">Link</label><br>
