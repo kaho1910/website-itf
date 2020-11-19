@@ -43,7 +43,7 @@
     </div>
     <div class="form-group">
       <label for="idLink">Link</label><br>
-      <input type="text" class="form-control" name="link" id="idLink" placeholder="Enter Link" value="<?php echo $res['Link'];?>">
+      <input type="text" class="form-control" name="link" id="idLink" placeholder="Enter Link" value=<?php echo $res['Link'];?>>
     </div>
     <button type="submit" class="button button1">Submit</button>
   </form>
