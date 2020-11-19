@@ -53,29 +53,7 @@
     <?php
     }
     ?>
-    <table class="table table-striped">
-      <thead>
-        <tr>
-          <th><div>Name</div></th>
-          <th><div>Comment </div></th>
-          <th><div>Link </div></th>
-        </tr>
-      </thead>
-      <?php
-      while($Result = mysqli_fetch_array($res))
-      {
-      ?>
-      <tbody>
-        <tr class="table-primary">
-          <td><?php echo $Result['Name'];?></div></td>
-          <td><?php echo $Result['Comment'];?></td>
-          <td><?php echo $Result['Link'];?></td>
-        </tr>
-      </tbody>
-      <?php
-      }
-      ?>
-    </table>
+  </table>
   <?php
   mysqli_close($conn);
   ?>
