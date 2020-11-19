@@ -29,8 +29,8 @@
     {
         die('Failed to connect to MySQL: '.mysqli_connect_error());
     }
-    $id = $_GET['id'];
-    $res = mysqli_query($conn, "SELECT * FROM guestbook WHERE id=$id");
+    $id = $_GET['ID'];
+    $res = mysqli_query($conn, "SELECT * FROM guestbook WHERE ID=$id");
   ?>
   <!-- Close container -->
   <?php
