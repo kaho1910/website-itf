@@ -21,8 +21,8 @@
     <thead>
       <tr>
         <th width="100"> <div align="center">Name</div></th>
-        <th width="300"> <div>Comment</div></th>
-        <th width="100"> <div>Link</div></th>
+        <th width="350"> <div>Comment</div></th>
+        <th width="150"> <div>Action</div></th>
       </tr>
     </thead>
     <?php
