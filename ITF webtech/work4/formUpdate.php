@@ -44,7 +44,7 @@
       <input type="text" class="form-control" name="comment" value="<?php echo $comment;?>" id="idComment">
     </div>
     <div class="form-group">
-      <label for="link1">Link</label><br>
+      <label for="idLink">Link</label><br>
       <input type="text" class="form-control" name="link" value="<?php echo $link;?>" id="idLink">
     </div>
     <button type="submit" class="button button1">Submit</button>

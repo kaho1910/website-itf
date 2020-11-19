@@ -32,7 +32,7 @@
       <input type="text" class="form-control" name="comment" placeholder="Enter Comment" id="idComment" row="3">
     </div>
     <div class="form-group">
-      <label for="link1">Link</label><br>
+      <label for="idLink">Link</label><br>
       <input type="text" class="form-control" name="link" placeholder="Enter Link" id="idLink" >
     </div>
     <button type="submit" class="button button1">Submit</button>
