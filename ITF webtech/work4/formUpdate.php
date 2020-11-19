@@ -37,7 +37,7 @@
     while($Result = mysqli_fetch_array($res))
   {
   ?>
-  <form action="update.php" method="post" id="Comment Form">
+  <form action="update.php" method="post" id="CommentForm">
     <div class="form-group">
       <label for="idName">Name</label><br>
       <input type="text" class="form-control" name="name" id="idName" placeholder="Enter Name" value=<?php echo $Result['Name'];?>>
