@@ -17,7 +17,7 @@
   }
   $res = mysqli_query($conn, 'SELECT * FROM guestbook');
   ?>
-  <table class="table table-striped">
+  <table width="600" class="table table-striped">
     <thead>
       <tr>
         <th width="400"> <div align="center">Name</div></th>
