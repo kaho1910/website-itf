@@ -23,7 +23,7 @@
         <th width="250"> <div align="center">Name</div></th>
         <th width="150"> <div>Comment</div></th>
         <th width="100"> <div>Link</div></th>
-        <th width="100"> <div align="center">Action</div></th>
+        <th width="100"> <div>Action</div></th>
       </tr>
     </thead>
     <?php
@@ -46,8 +46,8 @@
     <?php
     }
     ?>
-  <div style="text-align: center"><a href="formAdd.php" class="btn btn-warning btn-block">Add New Guest</a></div>
   </table>
+  <div style="text-align: center"><a href="formAdd.php" class="btn btn-warning btn-block">Add New Guest</a></div>
   <?php
   mysqli_close($conn);
   ?>
