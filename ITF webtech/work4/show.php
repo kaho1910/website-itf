@@ -41,6 +41,22 @@
         <a href="delete.php?id='.$Result['ID'].'" class="btn btn-danger">Delete</a>
         </div>'
         ;?></td>
+        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#confirm">Del</button>
+        <div class="modal fade" id="confirm" role="dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="clos" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Confirmation</h4>
+            </div>
+            <div class="modal-body">
+              <p>Are you sure?</p>
+            </div>
+            <div class="modal-footer">
+              <a href="delete.php?id='.$Result['ID'].'" class="btn btn-danger" data-dismiss="modal">Delete</a>
+              <button type="button" class="btn btn-defult" data-dismiss="modal">close</button>
+            </div>
+          </div>
+        </div>
       </tr>
     </tbody>
     <?php
