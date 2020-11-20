@@ -17,20 +17,20 @@
   }
   $res = mysqli_query($conn, "SELECT * FROM guestbook");
   ?>
-  <table width="600" class="table table-striped">
+  <table width="800" class="table table-striped">
     <thead>
       <tr>
         <th width="400"> <div align="center">Name</div></th>
-        <th width="225"> <div>Comment</div></th>
+        <th width="250"> <div>Comment</div></th>
         <th width="50"> <div>Link</div></th>
-        <th width="125"> <div align="right">Action</div></th>
+        <th width="100"> <div align="right">Action</div></th>
       </tr>
     </thead>
     <?php
     while($Result = mysqli_fetch_array($res))
     {
     ?>
-    <tbody>
+    <tbody width="800">
       <tr class="table-primary">
         <td width="400"><div align="center"><?php echo $Result['Name'];?></div></td>
         <td width="250"><?php echo $Result['Comment'];?></td>
