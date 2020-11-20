@@ -38,6 +38,7 @@
   {
   ?>
   <form action="update.php" method="post" id="CommentForm">
+    <input hidden type="text" name ="id" id="id" value=<?php echo $Result['id'];?>>
     <div class="form-group">
       <label for="idName">Name</label><br>
       <input type="text" class="form-control" name="name" id="idName" placeholder="Enter Name" value=<?php echo $Result['Name'];?>>
