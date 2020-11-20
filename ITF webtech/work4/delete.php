@@ -40,7 +40,7 @@
           <p>New record deleted successfully</p>
         </div>
         <div class='modal-footer'>
-          <a href='show.php' class='btn btn-danger'>back to Main</a>
+          <a href='show.php' class='btn btn-info'>back to Main</a>
         </div>
       </div>
     </div>";
