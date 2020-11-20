@@ -18,10 +18,7 @@
       margin: 4px 2px;
       cursor: pointer;
     }
-    .button1 {background-color:green;}
-    .danger {border-color: #f44336;color: red}
-    .default {border-color: #e7e7e7;color: red;
-}
+    .waring {border-color: #f44336;color: red}
   </style>
 </head>
 <body>
@@ -38,10 +35,8 @@
       <label for="idLink">Link</label><br>
       <input type="text" class="form-control" name="link" placeholder="Enter Link" id="idLink" >
     </div>
-    <div><button type="submit" class="button btn-success">Submit</button>
-    <a href="show.php" class="button btn-default">cancel</a>
-    <a href="show.php" class="button btn-danger">cancel</a>
-    </div>
+    <button type="submit" class="button btn-success btn-block">Submit</button>
+    <a href="show.php" class="button btn-warning">cancel</a>
   </form>
 </body>
 </html>
