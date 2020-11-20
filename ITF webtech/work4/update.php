@@ -14,7 +14,7 @@ $link = $_REQUEST['link'];
 
 $sql = "UPDATE guestbook SET Name='$name', Comment='$comment', Link='$link' WHERE id='$id'";
 
-if (mysqli_query($conn, $sql)) {
+if (mysqli_query($sql, $conn)) {
     echo "New record updated successfully <br><a href='show.php' class='btn btn-primary'>back to Main</a>";
   } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
