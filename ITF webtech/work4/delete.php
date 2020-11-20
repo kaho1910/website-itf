@@ -39,7 +39,7 @@
           <p>Record deleted successfully</p>
         </div>
         <div class='modal-footer'>
-          <a href='show.php' class='btn btn-primary'>back to Main</a>
+          <a href='show.php' class='btn btn-primary'>Main</a>
         </div>
       </div>
     </div>
