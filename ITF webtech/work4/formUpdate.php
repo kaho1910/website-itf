@@ -30,7 +30,7 @@
         die('Failed to connect to MySQL: '.mysqli_connect_error());
     }
     $id = $_GET['id'];
-    $res = mysqli_query($conn, "SELECT * FROM guestbook WHERE id=$id");
+    $res = mysqli_query($conn, "SELECT * FROM guestbook WHERE ID=$id");
   ?>
   <!-- Close container -->
   <?php
@@ -38,7 +38,7 @@
   {
   ?>
   <form action="update.php" method="post" id="CommentForm">
-    <input hidden type="text" name ="id" id="id" value=<?php echo $Result['id'];?>>
+    <input hidden type="text" name ="id" id="id" value=<?php echo $Result['ID'];?>>
     <div class="form-group">
       <label for="idName">Name</label><br>
       <input type="text" class="form-control" name="name" id="idName" placeholder="Enter Name" value=<?php echo $Result['Name'];?>>
