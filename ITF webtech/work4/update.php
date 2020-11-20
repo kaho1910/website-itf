@@ -12,7 +12,7 @@ $name = $_REQUEST['name'];
 $comment = $_REQUEST['comment'];
 $link = $_REQUEST['link'];
 
-$sql = "UPDATE guestbook SET Name='$name', Comment='$comment', Link='$link' WHERE ID='$id'";
+$sql = "UPDATE guestbook SET Name='$name', Comment='$comment', Link='$link' WHERE id=$id";
 
 if (mysqli_query($sql, $conn)) {
     echo "New record updated successfully <br><a href='show.php' class='btn btn-primary'>back to Main</a>";
