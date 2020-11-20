@@ -9,6 +9,7 @@
   <style>
     .button {
       border: none;
+      background-color: white;
       color: white;
       padding: 10px 18px;
       text-align: center;

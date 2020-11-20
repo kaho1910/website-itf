@@ -9,6 +9,7 @@
   <style>
     .button {
       border: none;
+      background-color: white;
       color: white;
       padding: 10px 18px;
       text-align: center;
@@ -51,7 +52,7 @@
       <input type="text" class="form-control" name="link" id="idLink" placeholder="Enter Link" value=<?php echo $Result['Link'];?>>
     </div>
     <button type="submit" class="button btn-success btn-block">Submit</button>
-    <div align="center"><a href="show.php" class="button btn-danger" align="center">cancel</a></div>
+    <div align="center"><a href="show.php" class="button btn-danger">cancel</a></div>
   </form>
   <?php
   }
