@@ -33,14 +33,13 @@
     echo "<div class='modal fade' id='back' role='dialog'>
       <div class='modal-content'>
         <div class='modal-header'>
-          <button align='right' type='button' class='close' data-dismiss='modal'>&times;</button>
-          <h4 class='modal-title'>Confirmation</h4>
+          <a href='show.php' type='button' class='close'>&times;</a>
         </div>
         <div class='modal-body'>
           <p>New record deleted successfully</p>
         </div>
         <div class='modal-footer'>
-          <a href='show.php' class='btn btn-info'>back to Main</a>
+          <a href='show.php' class='btn btn-primary'>back to Main</a>
         </div>
       </div>
     </div>";

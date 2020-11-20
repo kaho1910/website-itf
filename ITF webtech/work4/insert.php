@@ -27,7 +27,19 @@ $sql = "INSERT INTO guestbook (Name , Comment , Link) VALUES ('$name', '$comment
 
 
 if (mysqli_query($conn, $sql)) {
-    echo "New record created successfully <br> <a href='show.php' class='btn btn-primary'>back to Main</a>";
+    echo "<div class='modal fade' id='back' role='dialog'>
+    <div class='modal-content'>
+      <div class='modal-header'>
+        <a href='show.php' type='button' class='close'>&times;</a>
+      </div>
+      <div class='modal-body'>
+        <p>New record created successfully</p>
+      </div>
+      <div class='modal-footer'>
+        <a href='show.php' class='btn btn-primary'>back to Main</a>
+      </div>
+    </div>
+  </div>";
   } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
   }
