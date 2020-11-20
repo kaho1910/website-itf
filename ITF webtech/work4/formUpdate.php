@@ -8,7 +8,7 @@
   <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
   <style>
     .button {
-      border: none;
+      border: 1px solid black;
       background-color: white;
       color: white;
       padding: 10px 18px;
