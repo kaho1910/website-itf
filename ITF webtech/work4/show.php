@@ -23,7 +23,7 @@
         <th width="250"> <div align="center">Name</div></th>
         <th width="150"> <div>Comment</div></th>
         <th width="100"> <div>Link</div></th>
-        <th width="100"> <div>Action</div></th>
+        <th width="100"> <div align="center">Action</div></th>
       </tr>
     </thead>
     <?php
@@ -36,7 +36,7 @@
         <td width="250"><?php echo $Result['Comment'];?></td>
         <td width="100"><?php echo $Result['Link'];?></td>
         <td width="100"><?php
-        echo '<div class"btn-group btn-group-lg">
+        echo '<div align="center" class"btn-group btn-group-lg">
         <a href="formUpdate.php?id='.$Result['ID'].'" class="btn btn-info">Edit</a>
         <a href="delete.php?id='.$Result['ID'].'" class="btn btn-danger">Delete</a>
         </div>'
