@@ -25,24 +25,7 @@
 
 
   if (mysqli_query($conn, $sql)) {
-      echo '<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#confirm">Del</button>
-        <div class="modal fade" id="confirm" role="dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button align="right" type="button" class="close" data-dismiss="modal">&times;</button>
-              <h4 class="modal-title">Confirmation</h4>
-            </div>
-            <div class="modal-body">
-              <p>Are you sure?</p>
-            </div>
-            <div class="modal-footer">
-              <?php
-              echo "<a href="delete.php?id='.$Result['ID'].'" class="btn btn-danger">Delete guest</a>"
-              ?>
-              <button type="button" class="btn btn-defult" data-dismiss="modal">close</button>
-            </div>
-          </div>
-        </div>';
+    echo "New record deleted successfully<br><a href='show.php' class='btn btn-primary'>back to Main</a>"
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
