@@ -20,10 +20,10 @@
   <table width="800" class="table table-striped">
     <thead>
       <tr>
-        <th width="400"> <div align="center">Name</div></th>
+        <th width="350"> <div align="center">Name</div></th>
         <th width="250"> <div>Comment</div></th>
-        <th width="50"> <div>Link</div></th>
-        <th width="100"> <div align="center">       Action</div></th>
+        <th width="100"> <div>Link</div></th>
+        <th width="100"> <div align="center">Action</div></th>
       </tr>
     </thead>
     <?php
@@ -32,11 +32,11 @@
     ?>
     <tbody width="800">
       <tr class="table-primary">
-        <td width="400"><div align="center"><?php echo $Result['Name'];?></div></td>
+        <td width="350"><div align="center"><?php echo $Result['Name'];?></div></td>
         <td width="300"><?php echo $Result['Comment'];?></td>
-        <td width="50"><?php echo $Result['Link'];?></td>
-        <td width="25"><?php echo '<a href="formUpdate.php?id='.$Result['ID'].'" class="btn btn-primary">Edit</a>';?></td>
-        <td width="25"><?php echo '<a href="delete.php?id='.$Result['ID'].'" class="btn btn-primary">Delete</a>';?></td>
+        <td width="100"><?php echo $Result['Link'];?></td>
+        <td width="25"><?php echo '<a href="formUpdate.php?id='.$Result['ID'].'" class="btn btn-info">Edit</a>';?></td>
+        <td width="25"><?php echo '<a href="delete.php?id='.$Result['ID'].'" class="btn btn-danger">Delete</a>';?></td>
       </tr>
     </tbody>
     <?php
@@ -46,6 +46,6 @@
   <?php
   mysqli_close($conn);
   ?>
-  <div style="text-align: center"><a href="formAdd.php" class="btn btn-primary">Add</a></div>
+  <div style="text-align: center"><a href="formAdd.php" class="btn btn-warning">Add</a></div>
   </body>
 </html>
