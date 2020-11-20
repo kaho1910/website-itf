@@ -35,6 +35,12 @@
         <td width="350"><div align="center"><?php echo $Result['Name'];?></div></td>
         <td width="300"><?php echo $Result['Comment'];?></td>
         <td width="100"><?php echo $Result['Link'];?></td>
+        <td width="50"><?php
+        echo '<div class"btn-group btn-group-lg">
+        <a href="formUpdate.php?id='.$Result['ID'].'" class="btn btn-info">Edit</a>
+        <a href="delete.php?id='.$Result['ID'].'" class="btn btn-danger">Delete</a>
+        </div>'
+        ;?></td>
         <td width="25"><?php echo '<a href="formUpdate.php?id='.$Result['ID'].'" class="btn btn-info">Edit</a>';?></td>
         <td width="25"><?php echo '<a href="delete.php?id='.$Result['ID'].'" class="btn btn-danger">Delete</a>';?></td>
       </tr>
