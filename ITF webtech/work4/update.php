@@ -36,7 +36,7 @@ if (mysqli_query($conn, $sql)) {
         <a href='show.php' type='button' class='close'>&times;</a>
       </div>
       <div class='modal-body' align='center'>
-        <p>New record updated successfully</p>
+        <p>Record updated successfully</p>
       </div>
       <div class='modal-footer'>
         <a href='show.php' class='btn btn-primary'>back to Main</a>
