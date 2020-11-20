@@ -46,12 +46,10 @@
     <?php
     }
     ?>
-    <div style="text-align: center"><a href="formAdd.php" class="btn btn-warning btn-block">Add New Guest1</a></div>
+    <div style="text-align: center"><a href="formAdd.php" class="btn btn-warning btn-block">Add New Guest to guestbook</a></div>
   </table>
-  <div style="text-align: center"><a href="formAdd.php" class="btn btn-warning btn-block">Add New Guest2</a></div>
   <?php
   mysqli_close($conn);
   ?>
-  <div style="text-align: center"><a href="formAdd.php" class="btn btn-warning btn-block">Add New Guest3</a></div>
 </body>
 </html>
