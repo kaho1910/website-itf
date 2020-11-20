@@ -40,7 +40,7 @@
         <a href="formUpdate.php?id='.$Result['ID'].'" class="btn btn-info">Edit</a>
         <a href="delete.php?id='.$Result['ID'].'" class="btn btn-danger">Delete</a>
         </div>'
-        ;?></td>
+        ;?>
         <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#confirm">Del</button>
         <div class="modal fade" id="confirm" role="dialog">
           <div class="modal-content">
@@ -57,6 +57,7 @@
             </div>
           </div>
         </div>
+        </td>
       </tr>
     </tbody>
     <?php
