@@ -7,14 +7,13 @@
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
   <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
   <style>
-    .button {
-      border: 1px solid black;
+    .btn {
+      border: 1px green;
       background-color: white;
       color: white;
       padding: 10px 18px;
       text-align: center;
       text-decoration: none;
-      display: inline-block;
       font-size: 16px;
       margin: 4px 2px;
       cursor: pointer;
