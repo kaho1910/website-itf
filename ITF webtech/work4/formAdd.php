@@ -7,9 +7,20 @@
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
   <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
   <style>
-    .default {
-  border-color: #e7e7e7;
-  color: red;
+    .button {
+      border: none;
+      color: white;
+      padding: 10px 18px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+    .button1 {background-color:green;}
+    .danger {border-color: #f44336;color: red}
+    .default {border-color: #e7e7e7;color: red;
 }
   </style>
 </head>
@@ -29,6 +40,7 @@
     </div>
     <div><button type="submit" class="button btn-success">Submit</button>
     <a href="show.php" class="button btn-default">cancel</a>
+    <a href="show.php" class="button btn-danger">cancel</a>
     </div>
   </form>
 </body>
