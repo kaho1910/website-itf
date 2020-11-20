@@ -20,8 +20,8 @@
   <table width="600" class="table table-striped">
     <thead>
       <tr>
-        <th width="250"> <div align="center">Name</div></th>
-        <th width="150"> <div>Comment</div></th>
+        <th width="150"> <div align="center">Name</div></th>
+        <th width="250"> <div>Comment</div></th>
         <th width="100"> <div>Link</div></th>
         <th width="100"> <div align="center">Action</div></th>
       </tr>
@@ -30,9 +30,9 @@
     while($Result = mysqli_fetch_array($res))
     {
     ?>
-    <tbody width="800">
+    <tbody width="600">
       <tr class="table-primary">
-        <td width="350"><div align="center"><?php echo $Result['Name'];?></div></td>
+        <td width="150"><div align="center"><?php echo $Result['Name'];?></div></td>
         <td width="250"><?php echo $Result['Comment'];?></td>
         <td width="100"><?php echo $Result['Link'];?></td>
         <td width="100"><?php
@@ -41,13 +41,13 @@
         <a href="delete.php?id='.$Result['ID'].'" class="btn btn-danger">Delete</a>
         </div>'
         ;?></td>
+        <div style="text-align: center"><a href="formAdd.php" class="btn btn-warning btn-block">Add New Guest</a></div>
       </tr>
     </tbody>
     <?php
     }
     ?>
   </table>
-  <div style="text-align: center"><a href="formAdd.php" class="btn btn-warning btn-block">Add New Guest</a></div>
   <?php
   mysqli_close($conn);
   ?>
