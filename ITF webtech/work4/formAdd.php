@@ -35,7 +35,9 @@
       <label for="idLink">Link</label><br>
       <input type="text" class="form-control" name="link" placeholder="Enter Link" id="idLink" >
     </div>
-    <button type="submit" class="button button1">Submit</button>
+    <div><button type="submit" class="button btn-success">Submit</button>
+    <a href="show.php" class="button btn-default">cancel</a>
+    </div>
   </form>
 </body>
 </html>
