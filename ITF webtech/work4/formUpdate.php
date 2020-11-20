@@ -36,7 +36,7 @@
       <label for="idLink">Link</label><br>
       <input type="text" class="form-control" name="link" id="idLink" placeholder="Enter Link" value=<?php echo $Result['Link'];?>>
     </div>
-    <button type="submit" class="button btn-success btn-block">Submit</button>
+    <button type="submit" class="btn btn-success btn-block">Submit</button>
     <div style="text-align: center" align="center"><a href="show.php" class="btn btn-danger">cancle</a></div>
   </form>
   <?php

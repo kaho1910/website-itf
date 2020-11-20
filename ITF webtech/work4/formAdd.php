@@ -21,7 +21,7 @@
       <label for="idLink">Link</label><br>
       <input type="text" class="form-control" name="link" placeholder="Enter Link" id="idLink" >
     </div>
-    <button type="submit" class="button btn-success btn-block">Submit</button>
+    <button type="submit" class="btn btn-success btn-block">Submit</button>
     <div align="center"><a href="show.php" class="button btn-danger">cancel</a></div>
     <div style="text-align: center"><a href="show.php" class="btn btn-warning btn-block">Add New Guest to guestbook</a></div>
   </form>
