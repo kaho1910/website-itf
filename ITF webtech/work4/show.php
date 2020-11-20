@@ -33,9 +33,9 @@
     <tbody width="800">
       <tr class="table-primary">
         <td width="350"><div align="center"><?php echo $Result['Name'];?></div></td>
-        <td width="300"><?php echo $Result['Comment'];?></td>
+        <td width="250"><?php echo $Result['Comment'];?></td>
         <td width="100"><?php echo $Result['Link'];?></td>
-        <td width="50"><?php
+        <td width="100"><?php
         echo '<div class"btn-group btn-group-lg">
         <a href="formUpdate.php?id='.$Result['ID'].'" class="btn btn-info">Edit</a>
         <a href="delete.php?id='.$Result['ID'].'" class="btn btn-danger">Delete</a>
