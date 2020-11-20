@@ -46,6 +46,6 @@
   <?php
   mysqli_close($conn);
   ?>
-  <div style="text-align: center"><a href="formAdd.php" class="btn btn-warning">Add</a></div>
+  <div style="text-align: center"><a href="formAdd.php" class="btn btn-warning btn-block">Add New Guest</a></div>
   </body>
 </html>
