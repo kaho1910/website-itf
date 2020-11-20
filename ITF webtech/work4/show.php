@@ -41,14 +41,12 @@
         <a href="delete.php?id='.$Result['ID'].'" class="btn btn-danger">Delete</a>
         </div>'
         ;?></td>
-        <td width="25"><?php echo '<a href="formUpdate.php?id='.$Result['ID'].'" class="btn btn-info">Edit</a>';?></td>
-        <td width="25"><?php echo '<a href="delete.php?id='.$Result['ID'].'" class="btn btn-danger">Delete</a>';?></td>
       </tr>
     </tbody>
-    <div style="text-align: center"><a href="formAdd.php" class="btn btn-warning btn-block">Add New Guest</a></div>
     <?php
     }
     ?>
+  <div style="text-align: center"><a href="formAdd.php" class="btn btn-warning btn-block">Add New Guest</a></div>
   </table>
   <?php
   mysqli_close($conn);
