@@ -50,7 +50,7 @@
             </div>
             <div class="modal-footer">
               <?php
-              echo "<a href="delete.php?id='.$Result['ID'].'" class="btn btn-danger">Delete guest</a>"
+              echo "<a href="delete.php?id=".$Result["ID"]."" class="btn btn-danger">Delete guest</a>"
               ?>
               <button type="button" class="btn btn-defult" data-dismiss="modal">close</button>
             </div>
