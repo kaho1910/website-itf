@@ -32,7 +32,6 @@
     $id = $_GET['id'];
     $res = mysqli_query($conn, "SELECT * FROM guestbook WHERE ID=$id");
   ?>
-  <!-- Close container -->
   <?php
     while($Result = mysqli_fetch_array($res))
   {
@@ -56,7 +55,6 @@
   <?php
   }
   ?>
-  <!-- Close container -->
   <?php
   mysqli_close($conn);
   ?>
