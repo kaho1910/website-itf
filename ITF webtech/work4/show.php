@@ -38,7 +38,7 @@
         <td width="100"><?php
         echo '<div align="center" class"btn-group btn-group-lg">
         <a href="formUpdate.php?id='.$Result['ID'].'" class="btn btn-info">Edit</a>
-        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#confirm">Del</button>
+        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#confirm">Delete</button>
         <div class="modal fade" id="confirm" role="dialog">
           <div class="modal-content">
             <div class="modal-header">
@@ -50,7 +50,7 @@
             </div>
             <div class="modal-footer">
               <?php
-              echo "<a href="delete.php?id=".$Result["ID"]."" class="btn btn-danger">Delete guest</a>"
+              echo "<a href="delete.php?id='.$Result['ID'].'" class="btn btn-danger">Delete guest</a>"
               ?>
               <button type="button" class="btn btn-defult" data-dismiss="modal">close</button>
             </div>
