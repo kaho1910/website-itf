@@ -6,20 +6,6 @@
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
   <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-  <style>
-    .button {
-      border: 1px solid black;
-      background-color: white;
-      color: white;
-      padding: 10px 18px;
-      text-align: center;
-      text-decoration: none;
-      font-size: 16px;
-      margin: 4px 2px;
-      cursor: pointer;
-    }
-    .danger {border-color: #f44336;color: red}
-  </style>
 </head>
 <body>
   <form action="insert.php" method="post" id="CommentForm">
