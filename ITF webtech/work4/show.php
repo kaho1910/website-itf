@@ -41,15 +41,17 @@
         <a href="delete.php?id='.$Result['ID'].'" class="btn btn-danger">Delete</a>
         </div>'
         ;?></td>
-        <div style="text-align: center"><a href="formAdd.php" class="btn btn-warning btn-block">Add New Guest</a></div>
       </tr>
     </tbody>
     <?php
     }
     ?>
+    <div style="text-align: center"><a href="formAdd.php" class="btn btn-warning btn-block">Add New Guest1</a></div>
   </table>
+  <div style="text-align: center"><a href="formAdd.php" class="btn btn-warning btn-block">Add New Guest2</a></div>
   <?php
   mysqli_close($conn);
   ?>
+  <div style="text-align: center"><a href="formAdd.php" class="btn btn-warning btn-block">Add New Guest3</a></div>
 </body>
 </html>
