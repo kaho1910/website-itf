@@ -64,6 +64,7 @@
     ?>
     <div style="text-align: center"><a href="formAdd.php" class="btn btn-warning btn-block">Add New Guest to guestbook</a></div>
   </table>
+  <a href='show.php' class='btn btn-default'>refresh</a>
   <?php
   mysqli_close($conn);
   ?>
