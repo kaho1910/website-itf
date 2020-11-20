@@ -8,21 +8,6 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-  <form action="insert.php" method="post" id="CommentForm">
-    <div class="form-group">
-      <label for="idName">Name</label><br>
-      <input type="text" class="form-control" name="name" placeholder="Enter Name" id="idName">
-    </div>
-    <div class="form-group">
-      <label for="idComment">Comment</label><br>
-      <input type="text" class="form-control" name="comment" placeholder="Enter Comment" id="idComment">
-    </div>
-    <div class="form-group">
-      <label for="idLink">Link</label><br>
-      <input type="text" class="form-control" name="link" placeholder="Enter Link" id="idLink" >
-    </div>
-    <button type="submit" class="button btn-success btn-block">Submit</button>
-    <div align="center"><a href="show.php" class="button btn-danger">cancel</a></div>
-  </form>
+    <div style="text-align: center"><a href="formAdd.php" class="btn btn-warning btn-block">Add New Guest to guestbook</a></div>
 </body>
 </html>
