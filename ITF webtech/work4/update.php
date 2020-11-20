@@ -43,7 +43,7 @@ if (mysqli_query($conn, $sql)) {
       </div>
     </div>
   </div>
-  <a href='show.php' class='btn btn-primary'>back to Main</a>";
+  <div align='center'><a href='show.php' class='btn btn-primary'>back to Main</a></div>";
   } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
   }
