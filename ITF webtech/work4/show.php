@@ -51,6 +51,5 @@
   <?php
   mysqli_close($conn);
   ?>
-  <div style="text-align: center"><a href="test.php" class="btn btn-warning btn-block">test</a></div>
 </body>
 </html>
